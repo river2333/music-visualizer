@@ -1,0 +1,127 @@
+html,body,div,header,h1,h2,footer,p,ul,li,span,a,dl,dt,dd,
+section,canvas,input,button,form,textarea,select{
+	margin: 0;
+	padding: 0;
+	list-style: outside none none;
+	color: #fff;
+	box-sizing: border-box;
+}
+a{
+	text-decoration: none;
+}
+
+html,
+body {
+	height: 100%;
+	overflow: hidden;
+}
+
+body{
+	position: relative;
+	text-align: center;
+	background: #000;
+	font: 16px "微软雅黑",Georgia,Serif;
+}
+a {
+  color: #00B7FF;
+}
+/*头部*/
+header,
+.left,
+.right {
+	position: absolute;
+}
+header {
+	left: 1rem;
+	right: 1rem;
+	top: 1rem;
+}
+header h1 {
+	font-size: 40px;
+	height: 5rem;
+	line-height:5rem;
+}
+
+.type  {
+	display:inline-block;
+	border-radius: 4px;
+	border: 1px solid #fff;
+    margin: 0 auto;
+
+}
+.type li {
+	height: 20px;
+    line-height: 20px;
+    width: 5rem;
+    display: inline-block;
+    padding-right: 0.5rem;
+    padding-left: 0.5rem;
+}
+
+header .type li.selected {
+    background: #fff none repeat scroll 0 0;
+    color: #000;
+}
+
+input[type="range"] {
+	-webkit-moz-appearance: none;
+	-moz-moz-appearance: none;
+    background-color: gray;
+    border-radius: 10px;
+    height: 8px;
+    outline: medium none;
+}
+/*滑块*/
+input[type="range"]::-webkit-slider-thumb {
+	-webkit-moz-appearance: none;
+	height: 12px;
+	width: 12px;
+	background: #fff;
+	border-radius: 100%;
+}
+input[type="range"]::-moz-range-track {
+	
+	height: 8px;
+	width: 12px;
+	background: #999;
+	border-radius: 10px;
+	border: none;
+}
+input[type="range"]::-moz-range-thumb {
+	
+	height: 12px;
+	width: 12px;
+	border: none;
+	background: #fff;
+	border-radius: 100%;
+}
+.left {
+	left: 1rem;
+	top:11rem;
+	bottom: 1rem;
+	width: 13rem;
+	border: 1px solid #fff;
+	font-size: 0.8rem;
+	text-align: left;
+	overflow: auto;
+
+}
+
+.left ul li {
+    display: block;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+	cursor: pointer;
+	padding-top: 0.5rem;
+	padding-bottom: 0.5rem;
+}
+.left ul li.selected {
+	color: green;
+}
+.right {
+	right: 1rem;
+	top:11rem;
+	bottom: 1rem;
+	left: 15rem;
+}
